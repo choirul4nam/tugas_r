@@ -23,7 +23,7 @@ install_and_load("readxl")
 
 
 # Baca data
-file_excel <- "data_set_tugas3.xlsx"
+file_excel <- "tugas_r3/data_set_tugas3.xlsx"
 
 if (file.exists(file_excel)) {
   data <- read_excel(file_excel, sheet = "weather")
@@ -169,4 +169,3 @@ server <- function(input, output, session) {
 # Jalankan aplikasi
 cat("\nMenjalankan aplikasi Shiny...\n")
 shinyApp(ui = ui, server = server)
-
